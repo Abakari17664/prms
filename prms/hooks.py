@@ -10,6 +10,11 @@ app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "bakari607@gmail.com"
 app_license = "MIT"
+app_logo_url = "assets/prms/images/logo.png"
+website_context = {
+	"faveicon":	"assets/prms/images/logo.png",
+	"splash_image":	"assets/prms/images/logo.png"
+}
 
 # Includes in <head>
 # ------------------
