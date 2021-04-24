@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "Agency.####",
+ "creation": "2021-04-24 15:46:00.140223",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "s1",
+  "agency_name",
+  "c1",
+  "agrncy_abbreviation",
+  "s2",
+  "agency_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "s1",
+   "fieldtype": "Section Break",
+   "label": "Add New Agency"
+  },
+  {
+   "fieldname": "agency_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Agency Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "c1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "agrncy_abbreviation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Agency Abbreviation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "s2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "agency_description",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Agency Description",
+   "reqd": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-04-24 21:46:49.780365",
+ "modified_by": "Administrator",
+ "module": "PRMS",
+ "name": "Agency",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PRMS",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "agency_name",
+ "track_changes": 1
+}
