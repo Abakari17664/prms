@@ -1,0 +1,26 @@
+{
+ "content": null,
+ "creation": "2021-04-27 03:56:03.085715",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2021-04-27 03:56:03.085715",
+ "modified_by": "Administrator",
+ "module": "PRMS",
+ "name": "agenciens",
+ "owner": "Administrator",
+ "page_name": "Agenciens",
+ "roles": [
+  {
+   "role": "PRMS"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Agenciens"
+}

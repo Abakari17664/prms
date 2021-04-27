@@ -1,5 +1,8 @@
 {
  "actions": [],
+ "allow_copy": 1,
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
  "autoname": "Project-.####",
  "creation": "2021-04-24 22:07:01.934058",
  "doctype": "DocType",
@@ -8,8 +11,18 @@
  "field_order": [
   "s1",
   "p_agency",
+  "c1",
   "p_title",
+  "s4",
+  "project_type",
+  "section_break_6",
   "p_desc",
+  "s2",
+  "picture",
+  "c2",
+  "document",
+  "video",
+  "s3",
   "t_1"
  ],
  "fields": [
@@ -42,11 +55,66 @@
    "fieldname": "t_1",
    "fieldtype": "Table",
    "options": "Project Configuration"
+  },
+  {
+   "fieldname": "s2",
+   "fieldtype": "Section Break",
+   "label": "UPLOAD CENTER"
+  },
+  {
+   "fieldname": "picture",
+   "fieldtype": "Attach Image",
+   "label": "Picture"
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Attach",
+   "label": "Document"
+  },
+  {
+   "fieldname": "video",
+   "fieldtype": "Attach",
+   "label": "Video"
+  },
+  {
+   "fieldname": "project_type",
+   "fieldtype": "Select",
+   "label": "Project Type",
+   "options": "Software Development\nBuilding\nCapacity Building / Training\nFunding Program\nOther"
+  },
+  {
+   "fieldname": "c1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "s3",
+   "fieldtype": "Section Break",
+   "label": "Project Configurations"
+  },
+  {
+   "fieldname": "s4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "c2",
+   "fieldtype": "Column Break"
   }
  ],
+ "hide_toolbar": 1,
+ "image_field": "picture",
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-04-24 22:07:44.819119",
+ "links": [
+  {
+   "group": "Agencies",
+   "link_doctype": "Agency",
+   "link_fieldname": "agency_name"
+  }
+ ],
+ "modified": "2021-04-27 01:57:37.347598",
  "modified_by": "Administrator",
  "module": "PRMS",
  "name": "Project",
@@ -63,9 +131,23 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PRMS",
+   "share": 1,
+   "write": 1
   }
  ],
+ "search_fields": "p_agency",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "p_agency",
  "track_changes": 1
 }

@@ -4,7 +4,7 @@
  "allow_events_in_timeline": 1,
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "Agency.####",
+ "autoname": "format:{agency_name}",
  "creation": "2021-04-24 15:46:00.140223",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -13,7 +13,7 @@
   "s1",
   "agency_name",
   "c1",
-  "agrncy_abbreviation",
+  "agency_abbreviation",
   "s2",
   "agency_description"
  ],
@@ -21,7 +21,7 @@
   {
    "fieldname": "s1",
    "fieldtype": "Section Break",
-   "label": "Add New Agency"
+   "label": "New Agency"
   },
   {
    "fieldname": "agency_name",
@@ -35,13 +35,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "agrncy_abbreviation",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Agency Abbreviation",
-   "reqd": 1
-  },
-  {
    "fieldname": "s2",
    "fieldtype": "Section Break"
   },
@@ -51,12 +44,19 @@
    "in_list_view": 1,
    "label": "Agency Description",
    "reqd": 1
+  },
+  {
+   "fieldname": "agency_abbreviation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Agency Abbreviation",
+   "reqd": 1
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-04-24 21:46:49.780365",
+ "modified": "2021-04-27 02:58:16.594117",
  "modified_by": "Administrator",
  "module": "PRMS",
  "name": "Agency",
@@ -87,8 +87,9 @@
    "write": 1
   }
  ],
+ "search_fields": "agency_name, agency_abbreviation",
  "sort_field": "modified",
- "sort_order": "DESC",
+ "sort_order": "ASC",
  "title_field": "agency_name",
  "track_changes": 1
 }
