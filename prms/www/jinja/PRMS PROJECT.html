@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      html, body {
+        width: 210mm;
+        height: 297mm;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .pagebox{
+        border: 1px solid black;
+        width: 21cm;
+        height: 29.7cm;
+        display: block;
+        margin-bottom: 4em;
+      }
+      .top{
+            background-color: brown !important;
+            color: white;
+            font-size: 16px;
+            width: auto;
+            border-bottom: 5px solid navy;
+            text-align: right;
+            padding:6px;
+            font-weight: bold;
+            
+      }
+      .pagecontent{
+        width: 100%;
+        height: 92%;
+      }
+      .pagefooter{
+          border-top: 5px solid navy;
+          width:100%;
+          font-weight: bold;
+          padding-left: 10px;
+          font-size: 13px;
+      }
+      .topic{
+          font-weight: bold;
+          font-size: 25px;
+          width: 50%;
+          margin-left: 25%;
+          text-align: center;
+          text-transform: uppercase;
+          
+      }
+      .content-title{
+        text-transform: uppercase;
+        text-decoration:underline;
+        font-weight: bold;
+        color: black;
+        padding-top: 1em;
+        padding-bottom: .5em;
+        font-size: 18px;
+        margin-left: 20px;
+        
+      }
+      .content-title-data{
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-left: 20px;
+      }
+    @media print {
+      html, body {
+        width: 210mm;
+        height: 297mm;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .pagebox{
+        border:none;
+        margin-bottom: 4em;
+      }
+    }
+    </style>
+</head>
+<body>  
+<!-- page defult
+<div class="pagebox">
+  <div class="top">top</div>
+  <div class="pagecontent">page box</div>
+  <div class="pagefooter">footer</div>
+</div> -->
+
+<!-- page one: company title page start -->
+<div class="pagebox">
+  <div class="top"><em>PROJECT EVALUATION REPORT FOR {{doc.creation}}</em></div>
+  <div class="pagecontent">
+    <div class="topic">
+      <br><br><br><br><br><br><br><br><br><br><br>
+      {{doc.p_agency}}
+    </div>
+  </div>
+  <div class="pagefooter"><br>MINISTRY OF PETROLEUMRESOURCES 2021 MONITORING & EVALUATION EXERCISE</div>
+</div>
+<!-- end of page one -->
+    
+<!-- page two: company title page start -->
+<div class="pagebox">
+  <div class="top"><em>PROJECT EVALUATION REPORT FOR {{doc.creation}}</em></div>
+  <div class="pagecontent">
+    <br>
+      <center><div >{{doc.name}}</div></center>
+      <div class="content-title">PROJECT NAME</div>
+      <div class="content-title-data">{{doc.p_title}}</div>
+      <div class="content-title">PROJECT DESCRIPTION</div>
+      <div class="content-title-data">{{doc.p_desc}}</div>
+      <div class="content-title">PROJECT LOCATION</div>
+      <div class="content-title-data">{{doc.p_location}}</div>
+      <div class="content-title">PROJECT TYPE</div>
+      <div class="content-title-data">{{doc.project_type}}</div>
+  </div>
+  <div class="pagefooter"><br>MINISTRY OF PETROLEUMRESOURCES 2021 MONITORING & EVALUATION EXERCISE</div>
+</div>
+<!-- end of page two -->  
+
+<!-- page three: company title page start -->
+<div class="pagebox">
+  <div class="top"><em>PROJECT EVALUATION REPORT FOR {{doc.creation}}</em></div>
+  <div class="pagecontent">
+    <div class="content-title">PROJECT CONFIGURATION</div>
+      <table style="font-size: 12px; margin-left: 20px;">
+        {% for item in doc.t_1 %}
+            <tr>
+                <td>{{item.pc_name}}:</td>
+                <td>{{item.pc_desc}}</td>
+            </tr>
+      {% endfor %}       
+    </table>
+
+    <div class="content-title">EXPECTED PROJECT BENEFIT </div>
+    <div class="content-title-data">{{doc.p_benefit}}</div>
+  </div>
+  <div class="pagefooter"><br>MINISTRY OF PETROLEUMRESOURCES 2021 MONITORING & EVALUATION EXERCISE</div>
+</div>
+<!-- end of page three -->
+
+<!-- page four: company title page start -->
+<div class="pagebox">
+  <div class="top"><em>PROJECT EVALUATION REPORT FOR {{doc.creation}}</em></div>
+  <div class="pagecontent">
+    <center><div class="content-title">EXPECTED PROJECT BENEFIT </div></center>
+    <div class="content-title-data">{{doc.p_benefit}}</div>
+  </div>
+  <div class="pagefooter"><br>MINISTRY OF PETROLEUMRESOURCES 2021 MONITORING & EVALUATION EXERCISE</div>
+</div>
+<!-- end of page four -->
+
+<!-- page five: company title page start -->
+<div class="pagebox">
+  <div class="top"><em>PROJECT EVALUATION REPORT FOR {{doc.creation}}</em></div>
+  <div class="pagecontent">
+    <center><div class="content-title">PROJECT IMAGE</div></center>
+    <img src="{{doc.picture}}" alt="" srcset="" width="100%">
+  </div>
+  <div class="pagefooter"><br>MINISTRY OF PETROLEUMRESOURCES 2021 MONITORING & EVALUATION EXERCISE</div>
+</div>
+<!-- end of page five -->
+
+<!-- page six: company title page start -->
+<div class="pagebox">
+  <div class="top"><em>PROJECT EVALUATION REPORT FOR {{doc.creation}}</em></div>
+  <div class="pagecontent">
+    <center><div class="content-title">ATTACHED DOCUMENT</div></center>
+    <br><br>
+    <embed src="{{doc.document}}" width="100%" height="800" type="application/pdf">
+  </div>
+  <div class="pagefooter"><br>MINISTRY OF PETROLEUMRESOURCES 2021 MONITORING & EVALUATION EXERCISE</div>
+</div>
+<!-- end of page six -->
+
+<!-- page seven: company title page start -->
+<div class="pagebox">
+  <div class="top"><em>PROJECT EVALUATION REPORT FOR {{doc.creation}}</em></div>
+  <div class="pagecontent">
+    <div class="content-title">RECOMMENDATIONS</div>
+      <div class="content-title-data">{{doc.recommendations}}</div>
+      <div class="content-title">CONCLUSION</div>
+      <div class="content-title-data">{{doc.conclusion}}</div>
+  </div>
+  <div class="pagefooter"><br>MINISTRY OF PETROLEUMRESOURCES 2021 MONITORING & EVALUATION EXERCISE</div>
+</div>
+<!-- end of page seven -->
+</body>
+</html>
