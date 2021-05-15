@@ -27,8 +27,21 @@ body {
     background:  green;
     box-shadow: var(--shadow-sm);
     padding: 0;
+    color: white;
 }
-
+.nav-link {
+    color: white;
+}
+/* .page-container {
+    background-color: whitesmoke;
+    color: white;
+}
+.desk-sidebar .standard-sidebar-item.selected, .search-dialog .search-results .search-sidebar .standard-sidebar-item.selected, .standard-sidebar .standard-sidebar-item.selected {
+    background-color: green;
+}
+.widget-group .widget-group-head .widget-group-title { 
+    color: white;
+}   */
 /* login box */
 /* to find to page css you goto site/assit/frapp/scss */
 

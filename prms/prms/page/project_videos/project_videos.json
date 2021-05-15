@@ -1,0 +1,24 @@
+{
+ "content": null,
+ "creation": "2021-05-07 11:36:43.077064",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "",
+ "idx": 0,
+ "modified": "2021-05-07 11:36:43.077064",
+ "modified_by": "Administrator",
+ "module": "PRMS",
+ "name": "project-videos",
+ "owner": "Administrator",
+ "page_name": "Project Videos",
+ "roles": [
+  {
+   "role": "PRMS"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Project Videos"
+}

@@ -82,7 +82,7 @@
    "type": "Link"
   }
  ],
- "modified": "2021-04-27 04:09:42.176028",
+ "modified": "2021-05-10 11:05:59.747876",
  "modified_by": "Administrator",
  "module": "PRMS",
  "name": "PRMS",
@@ -119,6 +119,12 @@
    "label": "List Of Project",
    "link_to": "Project",
    "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Project Video",
+   "link_to": "project-videos",
+   "type": "Page"
   }
  ],
  "shortcuts_label": "Project Record Management System (PRMS)"
