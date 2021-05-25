@@ -21,11 +21,11 @@ website_context = {
 
 # include js, css files in header of desk.html
 app_include_css = "/assets/prms/css/prms.css"
-# app_include_js = "/assets/prms/js/prms.js"
+app_include_js = "/assets/prms/js/prms.js"
 
 # include js, css files in header of web template
 web_include_css = "/assets/prms/css/prms.css"
-# web_include_js = "/assets/prms/js/prms.js"
+web_include_js = "/assets/prms/js/prms.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "prms/public/scss/website"
@@ -47,12 +47,12 @@ web_include_css = "/assets/prms/css/prms.css"
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+home_page = "login"
 
 # # website user home page (by Role)
-# role_home_page = {
-# 	"PRMS": "/app/prms"
-# }
+role_home_page = {
+	"PRMS": "/app/prms"
+}
 
 # Generators
 # ----------

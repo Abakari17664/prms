@@ -1,10 +1,13 @@
 frappe.pages['project-videos'].on_page_load = function(wrapper) {
 	var page = frappe.ui.make_app_page({
 		parent: wrapper,
-		title: 'Project Videos test',
+		title: 'PRMS - MEDIA CENTER',
 		single_column: true
 	});
+	//addting a html file on the page video
+		$(frappe.render_template("project_videos", this)).appendTo(this.page.main); 
 }
+
 
 // frappe.pages['project-videos'].on_page_load = function(wrapper) {
 // 	new MyPage(wrapper);
